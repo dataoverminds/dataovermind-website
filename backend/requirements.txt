@@ -1,0 +1,23 @@
+# Core
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+
+# AI / LLM
+openai
+langchain
+langchain-openai
+langchain-community
+langchain-text-splitters
+
+# Vector Store
+chromadb
+
+# Document Processing
+python-multipart
+pypdf
+
+# Utilities
+aiofiles
