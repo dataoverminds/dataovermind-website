@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Globe, Link2, MessageCircle, Mail } from "lucide-react";
 
 const footerLinks = {
@@ -38,9 +39,12 @@ export function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #00C2FF, #00FFE5)' }}>
-                <span className="font-bold text-sm" style={{ color: '#05070A' }}>D</span>
-              </div>
+              <Image
+                src="/logo.png"
+                alt="DataOverMind Logo"
+                width={36}
+                height={36}
+              />
               <span className="text-lg font-bold tracking-tight">
                 Data<span className="gradient-text-blue">OverMind</span>
               </span>

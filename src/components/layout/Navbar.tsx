@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -45,9 +46,14 @@ export function Navbar() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center group-hover:shadow-[0_0_15px_rgba(0,194,255,0.3)] transition-shadow duration-300" style={{ background: 'linear-gradient(135deg, #00C2FF, #00FFE5)' }}>
-                <span className="font-bold text-sm" style={{ color: '#05070A' }}>D</span>
-              </div>
+              <Image
+                src="/logo.png"
+                alt="DataOverMind Logo"
+                width={36}
+                height={36}
+                className="group-hover:drop-shadow-[0_0_10px_rgba(0,194,255,0.4)] transition-all duration-300"
+                priority
+              />
               <span className="text-lg font-bold tracking-tight">
                 Data<span className="gradient-text-blue">OverMind</span>
               </span>
